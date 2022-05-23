@@ -1,0 +1,2655 @@
+/* Pastelería Trébol Styles */
+
+body {
+    background: rgb(148, 255, 212);
+    background: linear-gradient( 90deg, rgba(148, 255, 212, 1) 24%, rgba(62, 226, 159, 1) 69%);
+}
+
+
+/* Íconos */
+
+@font-face {
+    font-family: "icons";
+    src: url("../fonts/icons.eot");
+    src: url("../fonts/icons.eot?#iefix") format("embedded-opentype"), url("../fonts/icons.woff") format("woff"), url("../fonts/icons.ttf") format("truetype"), url("../fonts/icons.svg#icons") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+[data-icon]:before {
+    font-family: "icons" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "icons" !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-up:before {
+    content: "\61";
+}
+
+.icon-bag:before {
+    content: "\62";
+}
+
+.icon-user:before {
+    content: "\63";
+}
+
+.icon-search:before {
+    content: "\64";
+}
+
+.icon-logout:before {
+    content: "\65";
+}
+
+.icon-facebook-square:before {
+    content: "\66";
+}
+
+.icon-instagram:before {
+    content: "\67";
+}
+
+.icon-clock-o:before {
+    content: "\69";
+}
+
+.icon-phone-square:before {
+    content: "\6a";
+}
+
+.icon-home:before {
+    content: "\68";
+}
+
+.icon-map-marker:before {
+    content: "\6b";
+}
+
+.icon-chevron-down:before {
+    content: "\6c";
+}
+
+.icon-whatsapp:before {
+    content: "\6d";
+}
+
+.icon-trash:before {
+    content: "\6e";
+}
+
+.icon-pencil:before {
+    content: "\6f";
+}
+
+.icon-calendar:before {
+    content: "\70";
+}
+
+.icon-file-pdf-o:before {
+    content: "\71";
+}
+
+.icon-file-image-o:before {
+    content: "\72";
+}
+
+.icon-list-ul:before {
+    content: "\73";
+}
+
+.icon-minus-circle:before {
+    content: "\74";
+}
+
+.icon-chevron-left:before {
+    content: "\75";
+}
+
+.icon-chevron-right:before {
+    content: "\76";
+}
+
+.icon-check-square:before {
+    content: "\77";
+}
+
+.icon-chevron-down {
+    float: right;
+}
+
+#btncrear {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.txtno {
+    text-align: center !important;
+    font-family: "Sora";
+}
+
+.dropdown-content.select-dropdown span {
+    color: white !important;
+}
+
+.dataTables_length {
+    width: 20%;
+}
+
+.cont-tablape {
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#imgped {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.material-placeholder {
+    width: 100%;
+}
+
+
+/* General Styles */
+
+.contenedor {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.encabezado {
+    top: 0;
+    width: auto;
+    height: 1%;
+    padding: 0;
+    background-color: #0b7649;
+    margin-top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/hdr2.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: relative;
+    top: 0;
+    width: auto;
+    height: 1%;
+    padding: 0;
+    background-color: #0b7649;
+    margin-top: 0;
+}
+
+.titleh {
+    font-family: "Cookie";
+    text-decoration: none;
+    color: white;
+    bottom: 10em;
+    font-size: 60px;
+    margin-left: 0.1em;
+}
+
+@media screen and (min-width: 601px) {
+    div.menu span {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.menu span {
+        font-size: 27px;
+    }
+    a.titlemenu img {
+        height: 20px;
+        width: 20px;
+    }
+    div.inicioo {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.list-1 li {
+    float: right;
+    display: block;
+    padding: 0.5em;
+    list-style: none;
+    margin-left: 0px;
+}
+
+.search {
+    color: #095e3a;
+    background-color: #095e3a;
+}
+
+.busqueda {
+    color: #095e3a;
+    width: 30%;
+    float: right;
+    margin-right: 2rem;
+    background-color: #ccd8d3;
+    margin-top: 0.2rem;
+    border-radius: 2rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.title {
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.busqueda input:last-child {
+    height: 1px;
+}
+
+.brand-logo {
+    font-family: "Cookie";
+    font-weight: lighter;
+    font-size: 3rem !important;
+    margin-left: 1rem;
+    margin-top: 0.1rem;
+    color: white !important;
+}
+
+.navinicio {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 0px 20px;
+    z-index: 1;
+    display: block;
+}
+
+.iniciosec {
+    background-image: url(../img/image2.png);
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.navbar-fixed {
+    display: block !important;
+}
+
+.navgreen2 {
+    top: 0;
+    position: relative;
+    background: rgb(18, 173, 109);
+    padding: 0px 20px;
+    z-index: 999;
+    display: block;
+}
+
+.bienvhead {
+    margin-right: 1rem;
+    color: #05492d;
+}
+
+.containerimg {
+    width: 100% !important;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.containerimg2 {
+    width: 100% !important;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imgtitle {
+    width: 100%;
+}
+
+.txtcenter {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.txtcenter2 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.txtcenter3 {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.747);
+}
+
+.navgreen {
+    background: rgb(18, 173, 109);
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.boxe {
+    margin-top: 20px;
+    height: 1000px;
+    color: #0b7649;
+}
+
+.centro {
+    width: 100%;
+    height: 10%;
+    position: relative;
+    border: 3px solid rgba(0, 128, 0, 0);
+}
+
+.txtuno {
+    width: 100%;
+    height: 7%;
+    position: relative;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: #000;
+}
+
+
+/* label focus color */
+
+.input-field input[type="text"]:focus+label,
+.input-field input[type="password"]:focus+label,
+.input-field input[type="textarea"]:focus+label {
+    color: #0b7649 !important;
+}
+
+.input-field input[type="submit"] {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    font-family: "Sora";
+}
+
+.file {
+    margin-top: 0.7rem;
+    padding-bottom: 3rem;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type="text"]:focus,
+.input-field input[type="password"]:focus,
+.input-field input[type="textarea"]:focus {
+    border-bottom: 1px solid #0b7649 !important;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* valid color */
+
+.input-field input[type="text"].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* invalid color */
+
+.input-field input[type="text"].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #0b7649 !important;
+}
+
+.txtpe {
+    margin-top: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    color: #137e51;
+    font-size: 1rem;
+}
+
+#button {
+    display: inline-block;
+    background-color: #129b62;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.arribabtn i {
+    color: white;
+}
+
+#button::after {
+    content: "";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 25px;
+    color: #fff;
+}
+
+.titmv {
+    width: 60%;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    margin-left: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #f3faf8;
+}
+
+.contnts {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row.container {
+    padding-left: 10rem;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 96%;
+    height: 95%;
+    border: 2px dashed #96c3f0;
+    display: flex;
+    color: white;
+}
+
+.section.white {
+    background: rgb(1, 94, 133);
+    background: linear-gradient( 90deg, rgba(1, 94, 133, 1) 13%, rgba(2, 126, 177, 1) 57%, rgba(4, 101, 142, 1) 90%);
+    display: flex !important;
+}
+
+.imgtr {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    width: 10%;
+    display: flex;
+}
+
+.txtmv {
+    margin-left: 3rem;
+    text-align: justify;
+    width: 60%;
+    color: rgb(252, 249, 249);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.titmv2 {
+    text-align: right;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    margin-right: 6rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #fcfcfc;
+}
+
+.txtmv2 {
+    text-align: right;
+    margin-top: 0;
+    margin-right: 4rem;
+    width: 60%;
+    float: right;
+    color: rgb(247, 247, 247);
+    padding: 0.5rem;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #129b62b9;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.spaceje {
+    height: 1rem;
+    display: none;
+}
+
+.txtuno h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.txtdos {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.txttres {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.txtdos video {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #9ffad4;
+}
+
+.txtdos h1 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Montserrat";
+    font-size: 3rem;
+    color: #e0e0e0;
+}
+
+.centro h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav li a:hover {
+    background: red;
+}
+
+#submit {
+    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white !important;
+}
+
+.cont-form .waves-effect.waves-light.btn.waves-input-wrapper {
+    width: 30%;
+    padding: 0rem;
+    margin: 0;
+    background-color: #095e3a;
+}
+
+#search:focus,
+.label-icon .material-icons:focus {
+    float: right;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+nav .nav-wraper {
+    width: 1%;
+}
+
+.list-1 {
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 0.1em;
+}
+
+.nav1 ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav1 ul li a {
+    display: block;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.navigation {
+    background: #0b7649;
+    opacity: 0.9;
+    font-family: "Raleway";
+}
+
+.dropdown-trigger,
+.linknormal {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 601px) {
+    .navigation li a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navigation li a {
+        font-size: 0.4em;
+    }
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #0b7649;
+}
+
+.parallax-container {
+    height: 350px !important;
+}
+
+.navigation li {
+    float: left;
+}
+
+.btn.btn-primary.btn-lg.btn-block {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 601px) {
+    div.navigation span {
+        font-size: 60px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.navigation {
+        font-size: 27px;
+    }
+    div.contenedor h1 {
+        font-size: 30px;
+        text-shadow: 0 0 1px white, 0 0 2px black;
+    }
+    .footerc {
+        font-size: 15px;
+    }
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.dropbtn a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.navigation li a:hover,
+.dropdown:hover .dropbtn {
+    opacity: 0.6;
+    background-color: #05492d;
+    color: white;
+}
+
+.navigation li.dropdown {
+    display: inline-block;
+}
+
+.imgheader {
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem;
+}
+
+.imgheader2 {
+    width: 4rem;
+    height: 4rem;
+    margin: 0rem;
+    margin-left: 2rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(15, 139, 88) !important;
+    color: black;
+    min-width: 12rem !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+#ctc,
+#prd {
+    min-width: 15rem !important;
+}
+
+.dropdown-content a {
+    position: relative;
+    color: white !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    opacity: 0.8;
+    color: #05492d !important;
+}
+
+.dropdown-content .btn-menu:hover {
+    background-color: #61a78a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+[class^="icon-"]::before {
+    color: white;
+    font-size: 1em;
+}
+
+[class^="icon-"]:hover {
+    opacity: 0.7;
+}
+
+[class="icon-chevron-up"]::before {
+    font-size: 2em;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0px;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    opacity: 0.7;
+    color: #0b7649;
+}
+
+[class="icon-chevron-up"]:hover {
+    opacity: 1;
+}
+
+.titular {
+    color: #05492d;
+    text-align: left;
+    margin-top: 170px;
+    font-family: Raleway;
+    margin: 1em;
+}
+
+.titlemenu {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.btnssuc {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.btn {
+    text-align: center;
+    font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background: #161616;
+    color: white;
+    padding: 20px 30px 20px 30px;
+    text-decoration: none;
+}
+
+.contenedor-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-menu {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: "Zilla Slab";
+    font-size: 20px;
+}
+
+.btn-menu:hover {
+    opacity: 0.6;
+}
+
+.section-sucursales {
+    margin-left: auto;
+}
+
+.section-inicio {
+    display: inline-block;
+    background: url(../img/home.jpg);
+    height: 71vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    padding-top: 3rem;
+}
+
+.descpr {
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+.colcont {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.precio {
+    font-family: "Sora";
+}
+
+.contbtnspr .waves-effect.waves-light.btn {
+    font-family: "Sora";
+    background: rgb(33, 157, 107);
+    background: linear-gradient( 90deg, rgba(33, 157, 107, 1) 24%, rgba(34, 168, 114, 1) 69%);
+}
+
+.imgspd {
+    margin-top: 1rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgspd .materialboxed {
+    margin-right: 0 !important;
+}
+
+#imgpd {
+    width: 80%;
+    border-radius: 50%;
+    box-shadow: 10px 10px rgba(128, 128, 128, 0.664);
+}
+
+.contbtnspr .waves-effect.waves-light.btn.active {
+    font-family: "Sora";
+    background: rgb(25, 124, 84);
+    background: linear-gradient( 90deg, rgba(25, 124, 84, 1) 24%, rgba(15, 108, 71, 1) 69%);
+}
+
+.contwp {
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.enlacewp {
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 1px solid white;
+    background: rgb(30, 190, 160);
+    background: linear-gradient( 90deg, rgba(30, 190, 160, 1) 13%, rgba(0, 230, 118, 1) 69%);
+    color: white;
+    font-family: "Sora";
+}
+
+.enlacewp:hover {
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.precio {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #129b62;
+}
+
+.contbtnspr {
+    margin-left: 1.5rem;
+}
+
+.contenedor-boton .waves-effect.waves-light.btn-large {
+    background-color: #1baf72;
+    font-size: 2rem;
+    font-family: "Sora";
+}
+
+.contenedor-boton .waves-effect.waves-light.btn-large:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.text-izq {
+    height: auto;
+}
+
+.textbienv {
+    background-color: #2ea070bd;
+    margin-left: 4rem;
+    font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 4rem;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0;
+}
+
+.textbienv2 {
+    margin-top: 0;
+    margin-left: 0rem;
+    font-family: "Cookie", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: lighter;
+    font-size: 4.5rem;
+    color: #095e3a;
+    padding-left: 0rem;
+}
+
+.contenedor-video {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.videoinicio {
+    width: 50%;
+    height: 50%;
+    margin-top: 1rem;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px #16161652;
+    border-radius: 0.5rem;
+}
+
+.cont-prods {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnprods a {
+    text-align: center;
+}
+
+.linea {
+    color: #0b7649;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-style: solid;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+}
+
+header {
+    background: url();
+    /*v=viewport h=height */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.inicioo {
+    background: url(../img/design.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-quienesomos {
+    background: url(../img/design.png);
+}
+
+
+/* End of Header Styles */
+
+.space {
+    padding: 1.5rem;
+    background: rgb(23, 168, 95);
+    background: linear-gradient( 90deg, rgba(23, 168, 95, 1) 0%, rgba(12, 185, 112, 1) 28%, rgba(11, 118, 73, 1) 83%);
+}
+
+
+/* */
+
+.prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(../img/prds.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    width: 100% !important;
+    height: 1%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 0;
+}
+
+.cont-prev {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.cont-previmgs {
+    display: flex;
+}
+
+.imgprev {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    box-shadow: 10px 10px 0px 0px rgba(92, 55, 6, 0.356);
+}
+
+.imgprev2 {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+    box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+}
+
+#carimg {
+    background-image: url(../img/carousel1.png);
+}
+
+#carimg2 {
+    background-image: url(../img/carousel2.png);
+}
+
+#carimg3 {
+    background-image: url(../img/carousel3.png);
+}
+
+.imgprev3 {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+    -moz-box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+    box-shadow: 10px 10px 0px 0px rgba(8, 105, 41, 0.75);
+}
+
+.cont-link {
+    width: 40%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-prev h2 {
+    background-color: rgba(122, 75, 14, 0.37);
+    color: white;
+    font-family: "Montserrat";
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    width: 90%;
+    padding: 1rem;
+}
+
+.cont-link .waves-effect.waves-light.btn {
+    padding: 0.5rem;
+    height: 3rem;
+}
+
+#ir {
+    font-family: "Montserrat";
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: #d87d4e;
+    background-image: linear-gradient(62deg, #d87d4e 0%, #c84e0c 100%);
+}
+
+.prev h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Montserrat";
+}
+
+
+/* */
+
+
+/* Inicio de estilos de la sección Quienes Somos */
+
+.imgquienes {
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.section-quienesomos {
+    background: url();
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.section-quienesomos h3 {
+    margin-top: 0em;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Montserrat";
+}
+
+.header {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0 !important;
+}
+
+.hdrmyv {
+    background: rgb(23, 168, 95);
+    background: linear-gradient( 90deg, rgba(23, 168, 95, 1) 0%, rgba(12, 185, 112, 1) 28%, rgba(11, 118, 73, 1) 83%);
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    border-radius: 1rem;
+}
+
+.cont-myv {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.mision {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.imgmyv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 50%;
+    border: 5px solid #555;
+}
+
+.textmyv {
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-top: 5px dashed #555;
+    padding-top: 1rem;
+}
+
+.titmyv h3 {
+    font-size: 5rem;
+    font-family: "Cookie";
+}
+
+
+/* Final de estilos de la sección Sobre Mí */
+
+.footerc {
+    background-color: #0b7649;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 12px;
+}
+
+.logintit {
+    font-family: "Raleway";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1.6em;
+    text-shadow: none;
+    font-style: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.logintit2 {
+    font-family: "Raleway";
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: none;
+    font-style: bold;
+    margin-bottom: 2em;
+    margin-top: 0;
+    color: black;
+}
+
+.logintit2 a {
+    text-decoration: underline;
+    -webkit-transition: 0.5s;
+}
+
+.logintit2 a:hover {
+    font-size: 1.5rem;
+    -webkit-transition: 0.5s;
+    text-decoration: underline;
+}
+
+.cont-reglog {
+    text-align: center;
+}
+
+.reglog {
+    font-family: "Zilla Slab";
+    color: #05492d;
+    margin-left: 1em;
+    margin-top: 1em;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.reglog a {
+    color: #05492d;
+}
+
+.blacktxt {
+    font-family: "Zilla Slab";
+    color: block;
+    margin-top: 1em;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-sbmt {
+    text-align: center;
+}
+
+.reg .center-align {
+    margin-top: 1rem;
+}
+
+.msg1 {
+    margin-top: 2rem !important;
+    font-family: "Sora";
+    margin: 20px auto;
+    font-size: 15px;
+}
+
+.msg {
+    padding: 10px;
+    color: #05492d;
+    font-family: "Sora";
+    width: 320px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.msg:hover {
+    color: #0b7649;
+}
+
+.mensaje {
+    padding-top: 2em;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.logologin {
+    width: 100%;
+    background: rgb(20, 198, 124);
+    background: linear-gradient( 90deg, rgba(20, 198, 124, 1) 0%, rgba(13, 148, 92, 1) 41%, rgba(8, 106, 65, 1) 83%);
+}
+
+#lglgin {
+    height: 3rem !important;
+}
+
+.logout1 {
+    float: right;
+}
+
+.right1 {
+    float: right;
+}
+
+.salir {
+    overflow: hidden;
+    align-content: inline;
+    display: block;
+}
+
+.recaptcha {
+    text-align: center;
+}
+
+.g-recaptcha {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+input[disabled]:hover {
+    cursor: not-allowed;
+}
+
+.contact {
+    font-family: "Montserrat";
+    font-size: 2em;
+    text-shadow: none;
+}
+
+.contact2 {
+    font-family: "Montserrat";
+    font-size: 2em;
+    text-shadow: none;
+    color: #08442c;
+}
+
+.msjno {
+    margin-top: 0;
+    color: white;
+    background-color: #b40e0e77;
+    font-family: "Montserrat";
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.titulosection {
+    font-family: "Raleway";
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1em;
+    text-shadow: none;
+    font-style: bold;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 601px) {
+    .titulosection {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .titulosection {
+        font-size: 1.7em;
+    }
+    .linea1 {
+        padding-left: 2em;
+        margin-left: 2em;
+        width: 10em;
+        height: 10em;
+        border-bottom: 1em solid #0b7649;
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+
+/* Sección de Pedidos Especiales */
+
+.section-login {
+    background: url(../img/image2.png);
+    height: 100vh;
+    /*v=viewport h=height */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.msj-ayuda {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(170, 51, 51);
+    margin-left: 3rem;
+}
+
+.msj-ayuda2 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(170, 51, 51);
+    width: 100% !important;
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.msj-ayuda3 {
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: rgb(18, 168, 80);
+    width: 100% !important;
+    margin: 0;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.cont-form {
+    margin-top: 1.5rem !important;
+    background-color: white;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.cont-forms {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-field.col.s12 .select-wrapper span {
+    background-color: white !important;
+    color: #0f5539 !important;
+}
+
+.primer {
+    width: 40%;
+}
+
+.contabajo {
+    display: flex !important;
+}
+
+.recaptcha {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contabajo .center-align {
+    margin-top: 1rem;
+    margin-right: 15rem;
+}
+
+.cont-form2 {
+    margin-top: 1rem !important;
+    background-color: white;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+    padding-top: 1rem;
+    max-height: 90vh;
+}
+
+.text {
+    background-color: #159c64;
+    border: 5px dashed rgb(16, 231, 131);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Sora";
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+}
+
+#submit:disabled {
+    opacity: 0.8;
+    cursor: not-allowed !important;
+}
+
+.waves-effect.waves-light.btn.waves-input-wrapper #submit:disabled {
+    opacity: 0.4;
+    cursor: not-allowed !important;
+}
+
+.imgs {
+    /*background-color: #428a6c;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.imguno {
+    height: 18rem;
+    /*v=viewport h=height */
+    background-size: cover;
+    position: relative;
+    width: 23rem;
+    /*margin-left: 1rem;*/
+}
+
+.imgdos {
+    height: 18rem;
+    /*v=viewport h=height */
+    background-size: cover;
+    position: relative;
+    width: 24rem;
+    /*margin-left: 1rem;*/
+}
+
+.imgtres {
+    height: 18em;
+    /*v=viewport h=height */
+    background-size: cover;
+    position: relative;
+    width: 23rem;
+    /*margin-left: 1rem;*/
+}
+
+#myImg,
+#myImg2,
+#myImg3 {
+    font-family: "Montserrat";
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+#myImg2:hover {
+    opacity: 0.7;
+}
+
+#myImg3:hover {
+    opacity: 0.7;
+}
+
+
+/* Caption of Modal Image */
+
+#caption,
+#caption2,
+#caption3 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    font-family: "Montserrat";
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.1);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+/* The Close Button */
+
+.close,
+.close2,
+.close3 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus,
+.close3:hover,
+.close3:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.contenedor-boton {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.boton {
+    background-color: #0b7649;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: "Montserrat";
+    padding: 1rem;
+    margin: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.boton:hover {
+    background-color: #063623;
+    text-align: center;
+    font-family: "Montserrat";
+    padding: 1rem;
+    margin: 1rem;
+    padding-top: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Estilos de Footer */
+
+.icon-facebook-square {
+    text-decoration: none;
+}
+
+.icon-instagram {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background: rgb(18, 173, 109);
+}
+
+.cont-contenido {
+    display: flex;
+}
+
+.cont-contenido .izquierda {
+    flex-basis: 45%;
+    padding: 0.3rem 0.5rem;
+}
+
+.contenido2 a {
+    margin-bottom: 3rem;
+}
+
+.place {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.titfoot {
+    font-family: "Raleway";
+    color: #063623;
+}
+
+.cont-contenido .centro {
+    flex-basis: 20%;
+    padding: 0.3rem 0.5rem;
+}
+
+.titpie {
+    margin-top: 1.4rem;
+    margin-bottom: 1.5rem;
+    font-family: "Cookie";
+    font-size: 2rem;
+    color: white;
+}
+
+.textpie {
+    font-family: "Montserrat";
+    color: white;
+}
+
+.linkpie {
+    font-family: "Montserrat";
+    color: #04331f;
+    margin-bottom: 1rem;
+}
+
+.linkpie:hover {
+    color: #3dcf92;
+    transition: 0, 6s;
+}
+
+.redes {
+    margin-top: 6rem;
+}
+
+.redes a {
+    padding-right: 0.5;
+    margin-left: 1.5rem;
+}
+
+.redes a span {
+    color: white;
+    height: 0.4rem;
+    width: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+
+.contenido {
+    margin-left: rem;
+    padding-bottom: 1rem;
+}
+
+.ctrls {
+    width: 1px;
+    border-radius: 50% !important;
+}
+
+.imgpop {
+    border-radius: 50%;
+}
+
+#WAButton {
+    border-radius: 50% !important;
+    margin-right: 0.2rem;
+    bottom: 15%;
+    z-index: 1;
+}
+
+.titlemenufooter {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-family: "Cookie";
+}
+
+.imgfooter {
+    margin-left: 0;
+    width: 15%;
+    margin-right: 0.5rem;
+}
+
+.izquierda {}
+
+.centro {
+    margin-right: 3rem;
+}
+
+.backfoot {
+    background-color: #0a3f2a;
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-family: "Montserrat";
+}
+
+.icon-clock-o,
+.icon-phone-square,
+.icon-map-marker {
+    font-size: 1.5rem;
+}
+
+.footerc {
+    bottom: 0;
+    position: absolute;
+}
+
+.footerc2 {
+    bottom: 0;
+    background-color: #0b7649;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 12px;
+}
+
+
+/* Estilos User NO logeado */
+
+.contenedor-opc {
+    display: flex;
+}
+
+div.polaroid {
+    margin-left: 15rem;
+    margin-right: 5rem;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.polaroid2 {
+    margin-left: 5rem;
+    margin-right: 15rem;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+}
+
+div.containeruser a {
+    font-family: "Montserrat";
+    text-align: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.polaroid2:hover {
+    box-shadow: 0 4px 8px 0 #0b7649, 0 6px 20px 0 #0b7649;
+    transition: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.polaroid:hover {
+    box-shadow: 0 4px 8px 0 #0b7649, 0 6px 20px 0 #0b7649;
+    transition: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.imguser {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15rem;
+    width: 12.5rem;
+}
+
+.segundfoot {
+    text-align: left;
+    margin-left: 1.7rem;
+}
+
+.phone {
+    text-align: left;
+}
+
+.teltext {
+    color: white;
+    font-size: 1rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: left;
+}
+
+.tellink {
+    color: #083d27;
+    font-size: 1rem;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: left;
+}
+
+.tellink:hover {
+    color: #129b62;
+    transition: 0.3s;
+}
+
+.social [class^="icon-"]:before {
+    color: white;
+    font-size: 2rem;
+}
+
+.containeruser {
+    background-color: #158a59;
+}
+
+
+/* Estilos para Sucursales */
+
+.ubicacion {
+    margin-left: 5rem;
+}
+
+.collapsible {
+    font-family: "Sora";
+    background-color: #0b7649 !important;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.colcont button:active {
+    background: #1ca56e;
+}
+
+.collapsible:hover {
+    background-color: #0f5539;
+}
+
+.content {
+    display: flex;
+    padding: 0 18px;
+    width: 80%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titsuc {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: "Sora";
+    color: #10724b;
+}
+
+.txtsuc {
+    margin-left: 0.5rem;
+    font-family: "Bellota Text", cursive;
+    font-weight: bold;
+}
+
+.btn.waves-effect.white.grey-text.darken-text-2 {
+    margin-bottom: 2rem;
+}
+
+.tabs .tab a {
+    color: #2dc988 !important;
+}
+
+.center-align .waves-effect.waves-light.btn {
+    background-color: #0e7a4d;
+}
+
+.cont-form3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 3rem;
+    background-color: rgba(255, 255, 255, 0.747);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cont-infous {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.315);
+}
+
+#btnci {
+    color: red !important;
+}
+
+.estado {
+    background-color: rgba(0, 64, 241, 0.712);
+    color: white;
+    font-weight: bold;
+}
+
+.paginate_button.previous.disabled {
+    margin-right: 1rem;
+}
+
+.paginate_button.next.disabled {
+    margin-left: 1rem;
+}
+
+.cont-tablape .icon-trash:before {
+    color: #04331f;
+    font-size: 2rem;
+}
+
+input:disabled {
+    cursor: auto !important;
+}
+
+.tabs .active {
+    color: #0b7649 !important;
+    font-family: "Sora";
+}
+
+.indicator {
+    background-color: #05492d !important;
+}
+
+.tabs .tab.col.s3 {
+    font-family: "Sora";
+}
+
+.indicators {
+    background-color: rgba(128, 128, 128, 0.39);
+}
+
+.contenedor-btn {
+    margin-bottom: 3rem;
+}
+
+.waves-effect.waves-light.btn-large {
+    padding-bottom: 3rem;
+}
+
+.carousel-item.active {
+    background-color: rgba(128, 128, 128, 0.281);
+}
+
+.navegacion {
+    display: block;
+    align-content: center;
+    margin: 0;
+    padding: 1rem;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    float: right;
+    background-color: #074d30;
+    z-index: 99;
+}
+
+#navbar {
+    background: #095e3a;
+    z-index: 10;
+}
+
+.nav {
+    background: #095e3a;
+    font-family: "Raleway";
+}
+
+.dropdown-content {
+    color: #095e3a;
+    z-index: 1;
+    width: 100%;
+}
+
+#dropdown1 {
+    z-index: 1;
+}
+
+.list {
+    color: black;
+}
+
+.contentido {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.contentido {
+    padding-top: 60px;
+}
+
+.content1 {
+    position: relative;
+    margin: 130px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.content1 .text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+.content1 .p {
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: #202020;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    background: rgb(18, 173, 109);
+}
+
+.main-content {
+    display: flex;
+    background: rgb(16, 148, 93);
+}
+
+.main-content .box {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .contentido {
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .contentido:before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .contentido:after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+
+.cont-form3 .mostrarocultar {
+    margin-bottom: 2rem !important;
+}
+
+.volver .material-icons {
+    position: absolute;
+    font-size: 4rem;
+    color: #05492d;
+}
+
+#benv {
+    text-align: center !important;
+}
+
+.waves-effect.waves-light.btn.waves-input-wrapper input {
+    font-family: "Sora" !important;
+    color: white;
+}
+
+.left .contentido p {
+    text-align: justify;
+}
+
+.left .contenido .social {
+    margin: 20px 0 0 0;
+}
+
+.left .contenido .social a {
+    padding: 0 2px;
+}
+
+.left .contenido .social a span {
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .contenido .social a span:hover {
+    background: #f12020;
+}
+
+.center .contenido .fas {
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.content {
+    padding: 0;
+}
+
+.datepicker-date-display,
+.datepicker-day-button:active {
+    background-color: #13925d !important;
+}
+
+.center .contenido .fas:hover {
+    background: #f12020;
+}
+
+.center .contenido .text {
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .contenido .phone {
+    margin: 15px 0;
+}
+
+.sidenav {
+    background: rgba(174, 236, 210, 0.911) !important;
+    z-index: 100000;
+}
+
+.titleside {
+    justify-content: center;
+    background: rgb(23, 168, 95);
+    background: linear-gradient( 90deg, rgba(23, 168, 95, 1) 0%, rgba(12, 185, 112, 1) 28%, rgba(11, 118, 73, 1) 83%);
+    font-family: "Cookie";
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    width: 100%;
+    top: 0;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0;
+}
+
+.subside {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: "Sora";
+    font-weight: bolder;
+    color: #b10794;
+}
+
+.subside2 {
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: "Sora";
+    font-weight: bolder;
+    color: #860671;
+}
+
+.txtside {
+    color: #072016 !important;
+    margin-left: 0;
+    text-align: left !important;
+    font-family: "Sora";
+}
+
+.sidenav .material-icons {
+    margin-right: 1rem !important;
+}
+
+.bottom center {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: rgb(9, 102, 63);
+}
+
+.bottom center span {
+    color: #afe9d1;
+}
+
+.bottom center a {
+    color: #10724b;
+    text-decoration: none;
+}
+
+.bottom center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box {
+        margin: 5px 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .nav-wrapper {
+        width: 100% !important;
+    }
+    .brand-logo {
+        font-size: 2rem !important;
+        margin-left: 2.5rem;
+        text-align: center;
+        width: 100%;
+    }
+    .imgheader {
+        width: 3.7rem;
+        height: 3.7rem;
+        margin-left: 1rem;
+    }
+    .contbtnspr {
+        margin-left: 0;
+    }
+    #btncit {
+        margin-bottom: 1rem;
+    }
+    .imgheader2 {
+        width: 3.7rem;
+        height: 3.7rem;
+        margin-left: 2rem;
+    }
+    .txtuno h1 {
+        margin-top: 5rem;
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .txtdos h1 {
+        margin-top: 5rem;
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .videoinicio {
+        width: 90%;
+        margin-top: 5rem;
+    }
+    .iniciosec {
+        background-image: url(../img/image2resp.png);
+        max-height: 100vh;
+    }
+    .titmv {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    .titmv2 {
+        font-size: 2rem;
+        margin-right: 1rem;
+    }
+    .txtmv {
+        width: 90%;
+        margin-left: 0.3rem;
+        font-size: 1rem;
+    }
+    .txtmv2 {
+        width: 90%;
+        margin-right: 0.3rem;
+        font-size: 1rem;
+    }
+    .row.container {
+        padding: 0;
+    }
+    .header {
+        font-size: 1.5rem;
+    }
+    .imgtr {
+        padding: 0.2rem;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 0.3rem;
+    }
+    .cont-previmgs {
+        display: initial;
+    }
+    .imgprev {
+        background-image: url(../img/prev1.png);
+    }
+    .imgprev,
+    .imgprev2,
+    .imgprev3 {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+    }
+    .cont-prev h2 {
+        font-size: 1.5rem;
+        width: 100%;
+        font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .titfoot,
+    .teltext {
+        font-family: "Sora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .teltext {
+        font-size: 0.9rem;
+    }
+    .prev {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-image: url(../img/prdsresponsive.png);
+        background-size: relative;
+        top: 0;
+        width: auto;
+        height: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        margin-top: 0;
+    }
+    .cont-forms {
+        display: initial;
+    }
+    .cont-form2 {
+        max-height: 80%;
+        margin-bottom: 3rem;
+        overflow-x: scroll;
+    }
+    .primer {
+        width: 95%;
+    }
+    .section-login {
+        background: url(../img/image2resp.png);
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-repeat: repeat;
+    }
+    .cont-form {
+        width: 90%;
+    }
+    .cont-form2 .recaptcha {
+        height: 2.2rem !important;
+        margin-bottom: 4rem !important;
+    }
+    .reg2 .center-align {
+        margin-bottom: 3rem !important;
+    }
+    #WAButton {
+        bottom: 15%;
+        z-index: 1;
+    }
+    .contabajo {
+        display: initial !important;
+    }
+    .cont-link {
+        width: 80%;
+    }
+    #carimg {
+        background-image: url(../img/carousel1resp.png);
+        background-repeat: no-repeat;
+    }
+    #carimg2 {
+        background-image: url(../img/carousel2resp.png);
+        background-repeat: no-repeat;
+    }
+    #carimg3 {
+        background-image: url(../img/carousel3resp.png);
+        background-repeat: no-repeat;
+    }
+    #recap {
+        margin-bottom: 4rem;
+    }
+    .txtcenter {
+        font-size: 1.5rem;
+    }
+    .contact-info {
+        display: initial;
+    }
+    .card-image {
+        display: none;
+    }
+    .infosuc {
+        display: none;
+    }
+    .content {
+        padding: 0;
+    }
+    .imgspd {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #imgpd {
+        margin-left: auto;
+        margin-right: auto !important;
+        margin-bottom: 1rem;
+    }
+    .text {
+        margin: 0;
+        padding: 1rem;
+        width: 90%;
+        font-size: 1rem;
+        margin-top: 3rem !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor-boton .waves-effect.waves-light.btn-large {
+        min-width: 100% !important;
+        padding: 0;
+        font-size: 0.9rem;
+    }
+    .contenedor-boton .material-icons.left {
+        margin-left: 0.4rem;
+        margin-right: 0;
+    }
+    .tabs .active {
+        font-size: 0.7rem !important;
+    }
+    .tab.col.s3 a {
+        font-size: 0.7rem !important;
+    }
+    .input-field.col.s6 {
+        width: 95% !important;
+    }
+    .cont-form3 {
+        width: 90%;
+    }
+    .imgpe {
+        width: 100%;
+    }
+    .spaceje {
+        display: block;
+    }
+}
